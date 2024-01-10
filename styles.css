@@ -1,0 +1,159 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
+body {
+    background-color: gainsboro;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;               /* 상단바 고정 */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: background-color 0.5s;       /* 부드러운 배경색 전환 */
+}
+
+.bg-color-1 {
+    background-color: rgba(255, 255, 255, 0)
+}
+
+.bg-color-2 { 
+    background-color: rgba(255, 255, 255, 0.7)
+}  
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 100px);
+    grid-gap: 5px;
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 100px;
+    
+    font-size: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+#aboutMe {
+    display: grid;
+    place-items: center;
+
+    font-size: 30px;
+
+    list-style-type : none;
+    margin: 150px 0;
+}
+
+.aboutMeTitle {
+    font-size : 40px;
+    margin-bottom: 30px;
+}
+
+.aboutMeText {
+    margin : 20px 0px;
+}
+
+#section {
+    display: block;
+    margin-top: 100px;
+
+    /* background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/01/mountains-736886_1280.jpg'); */
+     /* 배경 이미지의 크기를 조절 */
+    background-size: cover;
+
+     /* 배경 이미지를 반복 x */
+     background-repeat: no-repeat;
+
+    /* 배경 이미지를 가운데 정렬 */
+     background-position: center center;
+    }
+
+#logo {
+    margin-left: 50%;
+}
+
+#mainSec {
+    font-weight: 500;
+    font-size: 40px;
+    display: grid;
+    place-items: center; /* 수평 및 수직 가운데 정렬 */
+    padding : 200px 0;
+    color: white;
+    font-weight: bolder;
+}
+
+.aboutLi {
+    list-style-type: none;
+    display: grid;
+
+}
+
+#toolsSec {
+    display : grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    margin : 100px 0px;
+}
+
+.toolsIcon {
+    font-size: 200px;
+}
+
+#toolsTitle {
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+}
+
+#projectSec {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    place-items: center;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#projectList {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 100px;
+    margin-top: 70px;
+}
+
+.projectButton {
+    padding: 80px 70px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* 마우스 올리면 색 변환 */
+.projectButton:hover {
+    background-color: #2980b9;
+  }
+
+#githubSec {
+    display: grid;
+    place-items: center;
+    margin : 100px 0px ;
+}
+
+#githubSec > button {
+    font-size: 40px;
+    border-style: none;
+    background-color: gainsboro;
+
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+#githubSec > button:hover {
+    transform: scale(1.1);
+  }
